@@ -1,0 +1,29 @@
+
+/* Quiz */
+
+.page-header{
+    text-align: center;
+    font-size: 40px;
+    color: coral;
+}
+#test-form{
+    border: 2px solid red;
+    padding: 20px;
+    border-radius: 10px;
+    color: #6F7E89;
+}
+.list-quiz{
+    padding: 20px;
+}
+p{
+    margin: 0 0 10px;
+    display: block;
+}
+.label{
+    font-size: 75%;
+    color: #fff;
+    text-align: center;
+    line-height: 1;
+    white-space: nowrap;
+    vertical-align: baseline;
+}
