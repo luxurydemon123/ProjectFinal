@@ -6,12 +6,12 @@
   <section class="content-header">
     <h1>
       Data Tables
-      <small>advanced tables</small>
+      <small>Advanced tables</small>
     </h1>
     <ol class="breadcrumb">
       <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
       <li><a href="#">Tables</a></li>
-      <li class="active">Data tables</li>
+      <li class="active">Data Tables</li>
     </ol>
   </section>
 
@@ -27,7 +27,7 @@
           </div>
           <!-- /.box-header -->
           <div class="box-tools">
-            <div class="input-group  " style="width: 150px;">
+            <div class="input-group" style="width: 150px;">
                    
                    
                     <div class="input-group input-group-sm" style="margin-right: 30px width: 150px;">

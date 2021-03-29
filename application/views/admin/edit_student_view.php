@@ -101,7 +101,7 @@
 				
 				<div class="form-group row text-xs-center">
 					<div class="col-sm-offset-5 ">
-						<button class="btn btn-info" type="submit">Update </button>
+						<button class="btn btn-info" type="submit">Update</button>
 						
 					</div>
 				</div>

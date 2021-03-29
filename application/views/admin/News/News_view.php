@@ -40,7 +40,7 @@
 								<input name="image_news" type="file" class="form-control" placeholder="Image News">
 							</fieldset>
 							<fieldset class="form-group">
-								<label for="">Trích dẫn: </label>
+								<label for="">Quote: </label>
 								<input name="trichdan" type="text" class="form-control" placeholder="Image News">
 							</fieldset>
 
@@ -91,7 +91,7 @@
 										<p class="card-text"><?= $value['trichdan'] ?></p>
 									</div>
 									<div class="card-footer">
-										<small class="text-muted">Đăng vào ngày <?= date('d/m/Y - G:i - A',$value['date']) ?></small>
+										<small class="text-muted">Posted on <?= date('d/m/Y - G:i - A',$value['date']) ?></small>
 
 									</div>
 									<a href="<?= base_url() ?>admin/Manage_news/editNews/<?= $value['id'] ?>" class="btn btn-warning"><i class="fas fa-edit"></i></a>

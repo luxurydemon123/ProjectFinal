@@ -51,12 +51,12 @@
 					<div class="jumbotron jumbotron-fluid text-center">
 						<div class="container">
 							<h1 class="display-5">Manage Footer</h1>
-							<p class="lead">Form này cho phép người dùng sửa thông tin footer.</p>
+							<p class="lead">This form allows the user to edit the footer information.</p>
 						</div>
 					</div>
 					
 					<form method="POST" enctype="multipart/form-data" action="<?= base_url() ?>admin/Manage_Footer/updateFooter">
-						<h4 class="alert alert-info">Thông tin mạng xã hội</h4>
+						<h4 class="alert alert-info">Social Network Information</h4>
 					
 						
 						<div class="form-group">
@@ -74,19 +74,19 @@
 						
 						
 						<hr>
-						<h4 class="alert alert-info">Thông tin số hotline</h4>
+						<h4 class="alert alert-info">Information Hotline</h4>
 						<div class="form-group">
 							<label  for="exampleInputEmail1">Phone Number</label>
 							<input value="<?= $Hotline['soDT'] ?>" name="soDT" type="text" class="form-control" id="soDT"  placeholder="Phone Number">
 						</div>
 						<hr>
-						<h4 class="alert alert-info">Thông tin địa chỉ</h4>
+						<h4 class="alert alert-info">Information Address</h4>
 						<div class="form-group">
 							<label  for="exampleInputEmail1">Address</label>
 							<input value="<?= $Address['address'] ?>" name="address" type="text" class="form-control" id="address"  placeholder="Address">
 						</div>
 						<hr>
-						<h4 class="alert alert-info">Thông tin Gmail</h4>
+						<h4 class="alert alert-info">Information Gmail</h4>
 						<div class="form-group">
 							<label  for="exampleInputEmail1">Gmail</label>
 							<input value="<?= $Gmail['Gmail'] ?>" name="Gmail" type="text" class="form-control" id="Gmail"  placeholder="Gmail">
@@ -98,7 +98,7 @@
 							<input value="<?= $Title['nameWebsite'] ?>" name="nameWebsite" type="text" class="form-control" id="nameWebsite"  placeholder="Name Website">
 						</div>
 						<div class="form-group">
-							<label  for="exampleInputEmail1">Thông tin trang web</label>
+							<label  for="exampleInputEmail1">Information Website</label>
 							<input value="<?= $Title['titleWebsite'] ?>" name="titleWebsite" type="text" class="form-control" id="titleWebsite"  placeholder="Infomation Website">
 						</div>
 						
@@ -111,7 +111,7 @@
 							<input name="logo" type="file" class="form-control" id="logo"  placeholder="Logo Website">
 						</div>
 						<div class="form-group">
-							<input type="submit"  class="form-control btn btn-warning" id="nuthemdanhmuc" value="Lưu thông tin" >
+							<input type="submit"  class="form-control btn btn-warning" id="nuthemdanhmuc" value="Save information" >
 						</div>
 						
 

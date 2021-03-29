@@ -60,10 +60,9 @@
 
             <ul class="dropdown-menu" role="menu" id="user-profile">
                 <li><a href="#"><?= $this->session->userdata('user'); ?></a></li>
-                <li><a href="<?= base_url() ?>User/Information_user/">Thông tin cá nhân</a></li>
-                <li><a href="#">Tiến trình học tập</a></li>
-                <li><a href="#">Lịch sử giao dịch</a></li>
-                <li><a href="<?php echo base_url('Home/logout'); ?>">Đăng xuất</a></li>
+                <li><a href="<?= base_url() ?>User/Information_user/">Personal Information</a></li>
+                <li><a href="#">Learning Progress</a></li>
+                <li><a href="<?php echo base_url('Home/logout'); ?>">Log out</a></li>
             </ul>
           </li>
         </ul>

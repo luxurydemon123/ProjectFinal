@@ -4,6 +4,7 @@ class Manage_course extends CI_Controller {
 
 	public function __construct()
 	{
+		
 		parent::__construct();
 		$this->load->helper('url');
 		//Load Dependencies
@@ -21,17 +22,15 @@ class Manage_course extends CI_Controller {
 	//add New Course
 	public function add_course()
 	{	
+		$this->load->library('upload', $config);
 		//config upload images
 		$config['upload_path']          = './uploads/Course/';
 		$config['allowed_types']        = 'gif|jpg|png';
 		$config['max_size']             = '10000000';
-
-
-		$this->load->library('upload', $config);
 		$this->upload->do_upload('image');
 		$path_image = $this->upload->data();
 		$path_image = $path_image['file_name'];
-		$path_image = base_url() . 'uploads/Course/' . $path_image;
+		$path_image = base_url().'uploads/Course/'.$path_image;
 
 
 		$title = $this->input->post('title');
@@ -67,7 +66,7 @@ class Manage_course extends CI_Controller {
 	//Update Course
 	public function update_course()
 	{
-		$config['upload_path']          = './uploads/Course/';
+		$config['upload_path']          = './uploads/Course';
 		$config['allowed_types']        = 'gif|jpg|png';
 		$config['max_size']             = '10000000';
 

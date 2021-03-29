@@ -3,14 +3,11 @@
 <head>
   <meta charset="UTF-8">  
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800&amp;subset=vietnamese" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="<?= base_url() ?>css/css_all_course.css">
-    <link rel="stylesheet" href="<?= base_url() ?>css/header_and_footer.css">
-
+  <link rel="stylesheet" href="<?= base_url() ?>css/header_and_footer.css">
   <link rel="stylesheet" href="<?= base_url() ?>css/admin.css">
   <link rel="stylesheet" href="<?= base_url() ?>css/all.min.css">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Manage Course</title>
 </head>
@@ -41,19 +38,19 @@
     </div>
 
     <div class="form-group">
-      <label >Tên khóa học</label>
-      <input type="text" name="title" class="form-control title-course" placeholder="Nhập tên khóa học">
+      <label>Name Course</label>
+      <input type="text" name="title" class="form-control title-course" placeholder="Input The Course Name">
     </div>
     <hr>
 
     <div class="form-group">
-      <label for="exampleFormControlFile1">Ảnh khóa học</label>
+      <label for="exampleFormControlFile1">Course Image</label>
       <input type="file" class="form-control-file image-course" name="image">
     </div>
     <hr>
 
    
-    <input style="border-radius: 30px;"  st type="submit" value="ADD COURSE" class="btn btn-success btn-block btn-add-course">
+    <input style="border-radius: 30px;"type="submit" value="ADD COURSE" class="btn btn-success btn-block btn-add-course">
     
   </form>
   <br>
@@ -100,7 +97,7 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                       <div class="modal-content">
                         <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalCenterTitle">Bạn có muốn xóa khóa học ?</h5>
+                          <h5 class="modal-title" id="exampleModalCenterTitle">Do you want to delete the course?</h5>
                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                           </button>
@@ -123,7 +120,7 @@
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h3 class="modal-title" id="exampleModalLabel">Sửa Khóa Học</h3>
+                        <h3 class="modal-title" id="exampleModalLabel">Edit Course</h3>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                         </button>
@@ -133,15 +130,15 @@
                           <input type="hidden" name="id-edit" class="id-edit" value="">
                           <input type="hidden" name="image-course" class="image-course2" value="">
                           <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Tên khóa học : </label>
+                            <label for="recipient-name" class="col-form-label">Name Course: </label>
                             <input type="text" name="title-edit" class="form-control title-edit" id="recipient-name">
                           </div>
                           <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Ảnh khóa học : </label>
+                            <label for="recipient-name" class="col-form-label">Image Course: </label>
                             <img class="img-thumbnail image-course1" src="" alt="Ảnh edit">
                           </div>
                           <div class="form-group">
-                            <label for="message-text" class="col-form-label">Ảnh khóa học mới :</label>
+                            <label for="message-text" class="col-form-label">Image Course New :</label>
                             <input type="file" name="image-edit" class="form-control-file image-edit" name="image">
 
                           </div> 
@@ -152,7 +149,7 @@
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary btn-save">Lưu</button>
+                        <button type="submit" class="btn btn-primary btn-save">Save</button>
                       </div>
                     </div>
                   </div>

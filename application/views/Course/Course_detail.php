@@ -67,7 +67,7 @@
 										</div>
 
 										<a id="c-btn--custom" class="btn btn-primary" href="<?= base_url() ?>quiz/index/">
-											<i class="fa fa-send u-mr-xsmall"></i>Kiểm tra trình độ 
+											<i class="fa fa-send u-mr-xsmall"></i>Test the lesson
 										</a>		
 									</div>
 								

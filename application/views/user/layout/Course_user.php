@@ -69,7 +69,7 @@
 									<span class="cursor-default c-btn c-event__btn c-btn--custom u-bg-secondary u-color-primary u-border-zero">
 										<i class="fa fa-eye u-mr-xsmall"></i>247</span> 
 										<span class="cursor-default c-btn c-event__btn c-btn--custom u-bg-secondary u-color-primary u-border-zero"> 
-											<i class="far fa-paper-plane"></i> Học Miễn Phí 
+											<i class="far fa-paper-plane"></i> Study Free
 										</span> 
 									</div>
 								</div>

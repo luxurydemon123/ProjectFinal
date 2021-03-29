@@ -40,7 +40,7 @@
             <?php endforeach ?>
           </h3>
           <section>
-            <h4 class="title_lession">Bài Giảng
+            <h4 class="title_lession">Lesson
               <button style="float: right;" type="button" class="btn btn-info btn-add" data-toggle="modal" data-target="#add-lesson" >Add Lesson</button>
             </h4>
 
@@ -48,7 +48,7 @@
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Thêm bài giảng : </h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Add Lesson: </h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
@@ -56,23 +56,23 @@
                   <div class="modal-body">
                     <form class="form-add-lesson" method="post" action="<?= base_url() ?>admin/Manage_course/add_lesson/<?= $value['id_course']; ?>" enctype="multipart/form-data">
                       <div class="form-group">
-                        <label class="col-form-label">Tên bài giảng :</label>
-                        <input type="text" class="form-control" name="title-lesson" placeholder="Nhập tên bài giảng">
+                        <label class="col-form-label">Name Lesson:</label>
+                        <input type="text" class="form-control" name="title-lesson" placeholder="Input name lesson">
                       </div>
                       <div class="form-group">
-                        <label>Video Bài giảng :</label>
+                        <label>Video Lesson :</label>
                         <input type="file" class="form-control-file" name="file-lesson">
 
                       </div>
                       <div class="form-group">
                         <label>Link Youtube :</label>
-                        <input type="text" class="form-control" placeholder="Nhập url youtube" name="link-youtube">
+                        <input type="text" class="form-control" placeholder="Input url youtube" name="link-youtube">
                       </div>
                     </form>
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-info btn-add-lesson">Add lesson</button>
+                    <button type="button" class="btn btn-info btn-add-lesson">Add Lesson</button>
                   </div>
                 </div>
               </div>
@@ -83,8 +83,7 @@
                   <th scope="col">#</th>
                   <th scope="col">List</th>
                   <th scope="col">Date upload</th>
-                  <th scope="col">Video bài giảng</th>
-                  <th></th>
+                  <th scope="col">Video Lesson</th>
                 </tr>
               </thead>
               <tbody>
@@ -115,7 +114,7 @@
                   <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalCenterTitle">Bạn có muốn xóa bài học ?</h5>
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Do you want to delete the lesson?</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                         </button>
@@ -146,15 +145,15 @@
 
 
 
-            <h4 class="title">Tài liệu tham khảo
-              <button style="float: right;" type="button" class="btn btn-info" data-toggle="modal" data-target="#add-docs" >Add documents</button>
+            <h4 class="title">Documentation
+              <button style="float: right;" type="button" class="btn btn-info" data-toggle="modal" data-target="#add-docs" >Add Documents</button>
             </h4>
 
             <div class="modal fade" id="add-docs" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title">Add documents</h5>
+                    <h5 class="modal-title">Add Documents</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
@@ -162,11 +161,11 @@
                   <div class="modal-body">
                     <form  class="form-add-documents" method="post" action="<?= base_url() ?>admin/Manage_course/add_documents/<?= $id_lesson ?> ?>" enctype="multipart/form-data">
                       <div class="form-group">
-                        <label for="recipient-name" class="col-form-label">Tiêu đề : </label>
+                        <label for="recipient-name" class="col-form-label">Title: </label>
                         <input type="text" class="form-control" id="recipient-name" name="title-documents">
                       </div>
                       <div class="form-group">
-                        <label for="message-text" class="col-form-label">File documents:</label>
+                        <label for="message-text" class="col-form-label">File Documents:</label>
                         <input type="file" class="form-control-file" name="file-documents">
                       </div>
                     </form>
@@ -215,7 +214,7 @@
                       <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                           <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalCenterTitle">Bạn có muốn xóa bài học ?</h5>
+                            <h5 class="modal-title" id="exampleModalCenterTitle">Do you want to delete the lesson?</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                               <span aria-hidden="true">&times;</span>
                             </button>
@@ -237,7 +236,7 @@
           </section>
           <hr>
           
-          <h4 class="title">Nội dung khóa học</h4>
+          <h4 class="title">Course Content</h4>
           <div class="row">
             <form method="POST" enctype="multipart/form-data" action="<?= base_url() ?>admin/Manage_course/editContent">
             <?php foreach ($data_detail_course[2] as $value): ?>
@@ -253,7 +252,7 @@
           <?php endforeach ?>  
 
               <fieldset class="form-group"> 
-                <input type="submit" class="btn btn-warning btn-lg btn-block" value="Edit_Course">
+                <input type="submit" class="btn btn-warning btn-lg btn-block" value="Update Content">
               </fieldset>
             </form>
           </div>
@@ -274,12 +273,12 @@
                     <!-- Lesson -->
                      
                     <div class="form-group">
-                      <label for="recipient-name" class="col-form-label">Tên Bài giảng :</label>
+                      <label for="recipient-name" class="col-form-label">Name Lesson:</label>
                       <input type="text" class="form-control title-edit" name="title-edit">
                     </div>
                     <!-- File Video -->
                     <div class="form-group">
-                      <label class="col-form-label">File Video :</label>
+                      <label class="col-form-label">File Video:</label>
                       <input type="file" class="form-control-file" name="file-upload">
                       <input type="hidden" class="file-upload2" name="file-upload2">
                       <input type="hidden" name="type" class="type">
@@ -287,7 +286,7 @@
                     </div>
                     <!-- Link Youtube -->
                     <div class="form-group">
-                        <label  for="recipient-name" class="col-form-label">Link Youtube :</label>
+                        <label  for="recipient-name" class="col-form-label">Link Youtube:</label>
                         <input type="text" class="form-control youtube-edit"  name="youtube-edit">
                     </div>
                   </form>
@@ -304,7 +303,7 @@
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" >Edit : </h5>
+                  <h5 class="modal-title">Edit: </h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -314,7 +313,7 @@
                     <!-- Lesson -->
 
                     <div class="form-group">
-                      <label for="recipient-name" class="col-form-label">Tên Document:</label>
+                      <label for="recipient-name" class="col-form-label">Name Document:</label>
                       <input type="text" class="form-control title-edit" name="title-edit">
                     </div>
                     <!-- File Video -->
