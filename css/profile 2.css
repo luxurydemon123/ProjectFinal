@@ -1,0 +1,82 @@
+/*User information*/
+#profile {
+    padding: 50px 0;
+    background-color: #f7f7f7;
+}
+.img-avatar-content {
+    position: relative;
+    text-align: center;
+}
+
+#frame-avatar {
+    width: 120px;
+    height: 120px;
+}
+.frame-avatar {
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+}
+
+
+
+.profile-content {
+    padding-top: 25px;
+     
+
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 8px 20px #e3e7ea;
+}
+
+
+.profile-menu-item {
+    line-height: 42px;
+    padding-left: 16px;
+    font-size: 14px;
+}
+.profile-menu-item.active {
+    text-decoration: none;
+
+    border-left: 2px solid transparent;
+    margin-left: -2px;
+}
+.profile-menu-item.active, .profile-menu-item:hover {
+    background: rgba(0, 0, 0, 0.07);
+}
+.profile-menu-item {
+  text-decoration: none;
+    line-height: 42px;
+    padding-right: 20px;
+    font-size: 14px;
+}
+
+
+.profile-main {
+    padding: 20px 15px;
+    box-shadow: 0 8px 20px #e3e7ea;
+    border-radius: 6px;
+    background-color: white;
+}
+.profile-main-header {
+    line-height: 40px;
+}
+
+.main-header-item {
+    display: inline-block;
+}.main-header-item.active {
+    margin-bottom: -1px;
+    border-bottom: 2px solid transparent;
+}
+.main-header-item {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.course.hachium:hover, .profile-menu-item.active, .main-header-item.active, .ribbon-membership::before, .ribbon-membership::after {
+    border-color: #2a75ab !important;
+}
+.profile-main-content {
+    margin-top: 10px;
+}
